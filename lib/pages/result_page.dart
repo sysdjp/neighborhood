@@ -27,8 +27,10 @@ class ResultPage extends StatelessWidget {
                       child: ListTile(
                           title:
                           Text(
-                            // 'title',
-                               doc['title'],
+                            'title',
+                            //  doc.data()['title'],
+                            // doc.get('title'),
+                            //   doc['title']
                           ),
                           subtitle: Text('content')),
                     );
