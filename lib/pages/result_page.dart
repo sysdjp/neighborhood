@@ -25,24 +25,25 @@ class ResultPage extends StatelessWidget {
                   children: snapshot.data!.docs.map((doc) {
                     return Card(
                       child: ListTile(
-                          title: Text(
-                            'title',
-                            //doc.data()('title'),
+                          title:
+                          Text(
+                            // 'title',
+                               doc['title'],
                           ),
-                          subtitle: Text('subtitle')),
+                          subtitle: Text('content')),
                     );
                   }).toList(),
                 );
             }));
   }
-}
 
 // テキストにサブタイトルをつけて四角で囲って一覧表示
 // https://moimoiblog.com/programing/various-listview/
-Widget _buildButtonsTileView(String title) {
-  return Card(
-      child: ListTile(
-        title: Text(title),
-        subtitle: Text("サブタイトル"),
-  ));
+  Widget _buildButtonsTileView(String title) {
+    return Card(
+        child: ListTile(
+          title: Text(title),
+          subtitle: Text("サブタイトル"),
+        ));
+  }
 }
