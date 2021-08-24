@@ -25,10 +25,11 @@ class ResultPage extends StatelessWidget {
                   children: snapshot.data!.docs.map((doc) {
                     return Card(
                       child: ListTile(
-                        title: Text(
-                          doc.get('title'),
-                        ),
-                      ),
+                          title: Text(
+                            'title',
+                            //doc.data()('title'),
+                          ),
+                          subtitle: Text('subtitle')),
                     );
                   }).toList(),
                 );
@@ -41,7 +42,7 @@ class ResultPage extends StatelessWidget {
 Widget _buildButtonsTileView(String title) {
   return Card(
       child: ListTile(
-    title: Text(title),
-    subtitle: Text("サブタイトル"),
+        title: Text(title),
+        subtitle: Text("サブタイトル"),
   ));
 }
