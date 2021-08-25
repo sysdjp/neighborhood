@@ -1,10 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:neighborhood/pages/SettingPage.dart';
-import 'package:neighborhood/pages/dummy.dart';
 import 'package:neighborhood/pages/info_page.dart';
+import 'package:neighborhood/pages/page4.dart';
 import 'package:neighborhood/pages/post_page.dart';
-import 'package:neighborhood/pages/result_page.dart';
 import 'package:neighborhood/util/location.dart';
 
 void main() async {
@@ -43,7 +42,7 @@ class TopPage extends StatefulWidget {
 
 class _TopPageState extends State<TopPage> {
   int _selectedIndex = 0;
-  List<Widget> pageList = [InfoPage(), SettingsPage(), PostPage(), ResultPage()];
+  List<Widget> pageList = [InfoPage(), SettingsPage(), PostPage(), Page4()];
 
   @override
   Widget build(BuildContext context) {

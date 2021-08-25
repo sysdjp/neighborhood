@@ -7,11 +7,7 @@ class InfoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(16.0),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [
-        Text('Ver0.0.3', style: TextStyle(fontWeight: FontWeight.bold, )),
-        Text('getPost固定値'),
-        Text('Ver0.0.2', style: TextStyle(fontWeight: FontWeight.bold, )),
-        Text('getPostダミー化'),
+      child: Column(children: [
         Text('Ver0.0.1', style: TextStyle(fontWeight: FontWeight.bold)),
         Text('初版作成'),
       ]),

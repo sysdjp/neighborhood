@@ -30,7 +30,7 @@ class ResultPage extends StatelessWidget {
                             // 'title',
                             //  doc.data()['title'],
                             // doc.get('title'),
-                               doc['title']
+                              doc['title']
                           ),
                           subtitle: Text('content')),
                     );
